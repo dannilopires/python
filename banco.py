@@ -14,6 +14,10 @@ while True:
         saldo -= valor
         saque += 1
 
+        if valor > 500:
+            print("O limite máximo para saque é de R$500,00")
+            break
+
         if saque > 3:
             print ("Não é permitido fazer mais de 3 saques por dia")
             break
