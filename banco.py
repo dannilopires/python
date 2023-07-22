@@ -50,15 +50,15 @@ while True:
     elif opcao == 3:
 
         print("\n##########################")
-        print ("Seu saldo atual é: R$", format(saldo))
+        print ("Seu saldo atual é: R${:.2f}".format(saldo))
         print ("\n Saques:")
 
         for x in lista_saque:
-            print(x)
+            print ("R${:.2f}".format(x))
         
         print("\n Depósitos:")
         for y in lista_deposito:
-            print(y)
+            print ("R${:.2f}".format(y))
 
         print("\n##########################")
         
